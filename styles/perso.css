@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "harmond";
+    src: url("./../public/Harmond-ExtraBoldExpanded.otf") format("opentype");
+}
+
+.greybar {
+    height: 5vh;
+    background-color: rgb(233, 241, 8);
+    left: 0px;
+    top: 50vh;
+    /* width:100px; */
+    position: fixed;
+    z-index: 1000;
+}
+
+.wrapGreybar {
+    height: 10vh;
+    left: 0px;
+    top: 0;
+    width: 100vw;
+    position: fixed;
+    z-index: 0;
+}
+
+#text {
+
+    color: grey;
+    position: fixed;
+    right: 40vw;
+    top:0;
+    z-index: 1;
+    /* background-color: red; */
+    height: 10vw;
+    width: 15vw;
+    text-justify: auto;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+#card {
+
+    color: grey;
+    position: fixed;
+    left: 10vw;
+    top:25%;
+    z-index: 1;
+    /* background-color: red; */
+    height: 10vw;
+    width: 15vw;
+    text-justify: auto;
+    font-family: 'Courier New', Courier, monospace;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    z-Index:1
+
+}
+
+#cache {
+
+    color: white;
+    position: fixed;
+    left: 49vw;
+    top:25%;
+    z-index: 1;
+    background-color: black;
+    height: 10vw;
+    width: 15vw;
+    text-justify: auto;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+    /* animation-name: example; */
+    /* animation-duration: 10s; */
+    /* animation-iteration-count: infinite; */
+    z-Index:2;
+
+
+}
+
+.jjj{
+    color: white;
+}
+
+@keyframes example {
+    from {
+        left: 10vw;
+    }
+    to {
+      /* background-color: yellow; */
+      transform: translate(50vw, 0vh);
+     }
+}
